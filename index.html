@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>工作流画图</title>
+    <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="top">
+        <div class="name">
+            <h3>Web流程设计器</h3>
+        </div>
+        <div class="handle">
+            <h4>状态：选择元素</h4>
+        </div>
+        <div class="user">
+            <div class="function">
+                <div class="save">
+                    <input type="button" class="btn btn-info" value="保存">
+                </div>
+                <div class="file">
+                    <select name="file" id="file">
+                        <option value="新建流程图">新建流程图</option>
+                    </select>
+                </div>
+                <div class="rename">
+                    <input type="button" value="重命名" class="btn">
+                </div>
+                <div class="new">
+                    <input type="button" value="新建" class="btn">
+                </div>
+                <div class="delete">
+                    <input type="button" value="删除" class="btn">
+                </div>
+            </div>
+        </div>
+        <div class="info">
+            <div class="dropdown">
+                <img src="img/photo" alt="">
+                <span class="dropdown-toggle">未登录</span>
+                <!-- <b class="dropdown-toggle" data-toggle="dropdown"><span >帅哥</span></b> -->
+                <ul class="dropdown-menu" role="menu">
+                    <li><a id="upload" href="#">上传文件</a></li>
+                    <li><a id="download" href="#">下载文件</a></li>
+                    <li><a id="info" href="#">修改资料</a></li>
+                    <li class="divider"></li>
+                    <li><a id="logout" href="#">退出</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="dashboard">
+        <div class="choose btn btn-large" id="selectEle">
+            <img src="img/select.gif" alt=""><span>选择</span>
+        </div>
+        <div class="line btn btn-large" id="conLine">
+            <img src="img/line.png" alt=""><span>连线</span>
+        </div>
+        <div class="drag">
+            <div class="start btn btn-large">
+                <img src="img/start.png" alt="" >
+                <span name="start">开始</span>
+            </div>
+            <div class="status btn btn-large">
+                <img src="img/task.png" alt="" >
+                <span name="state">状态</span>
+            </div>
+            <div class="branch btn btn-large">
+                <img src="img/branch.png" alt="" >
+                <span name="branch">分支</span>
+            </div>
+            <div class="task btn btn-large" b>
+                <img src="img/task.png" alt="">
+                <span name="task">任务</span>
+            </div>
+            <div class="end btn btn-large">
+                <img src="img/end.png" alt="">
+                <span name="end">结束</span>
+            </div>
+            <div class="text btn btn-large">
+                <img src="img/end.png" alt="">
+                <span name="text">文本</span>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="flow">
+<!--         <canvas id="drawing" width="200" height="200" style="background:black"></canvas>
+        <svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="100" cy="50" r="40" stroke="black" stroke-width="2" fill="red"/>
+        </svg> -->
+
+    </div>
+
+    <!-- <div class="content">
+        <h4>属性</h4>
+        <div class="form">
+            <div>
+                <label for="name">名称</label><input class="span2" type="text" id="name" value="开始">
+            </div>
+            <div>
+                <label for="description">描述</label>
+                <textarea class="span2" name="description" id="description" cols="20" rows="2">开始</textarea>
+            </div>
+            <div class="condition"></div>
+            <div class="butt">
+                <input type="button" class="btn btn-success" id="confirm" value="确定">
+                <input type="button" class="btn" id="cancle" value="取消">
+            </div>
+            <div class="butt">
+                <input type="button" class="btn btn-danger span2" id="delete" value="删除此元素">
+            </div>
+        </div>
+    </div> -->
+
+    <div class="myalert" style="display:none"></div>
+    <div class="cover" style="display:none"></div>
+    
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/raphael-min.js"></script>
+    <script src="js/myflow.js"></script>
+    <script src="js/manage.js"></script>
+</body>
+</html>
