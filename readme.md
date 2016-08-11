@@ -1,7 +1,9 @@
 1. 遇到的问题：在循环绑定事件的时候，始终指向最后一个对象的值
 
 问题原因：主要是闭包导致的错误
+
 解决方案：使用匿名函数来解决这个问题
+```
 for(var i = 0;i < shapeArr.length;i ++){
     //去掉元素的drag事件
     shapeArr[i].re.undrag();
@@ -31,7 +33,7 @@ for(var i = 0;i < shapeArr.length;i ++){
     }
     shapeArr[i].re.click(fun(i));
 }
-
+```
 2. 作用域调用的问题
 
 
